@@ -8,9 +8,9 @@ namespace Project.Controllers
     {
         private readonly ICorporateJargonGenerator _corporateJargonGenerator;
 
-        public HomeController()
+        public HomeController(ICorporateJargonGenerator corporateJargonGenerator)
         {
-            _corporateJargonGenerator = new CorporateJargonGenerator();
+            _corporateJargonGenerator = corporateJargonGenerator;
         }
 
         public IActionResult Index()

@@ -1,7 +1,7 @@
 ﻿
 namespace Project.Models
 {
-    interface ICorporateJargonGenerator
+    public interface ICorporateJargonGenerator
     {
         string GetFluff();
     }
