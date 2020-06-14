@@ -10,7 +10,11 @@ namespace Project
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.WriteIndented = true;
+                });
             services.AddScoped<ICorporateJargonGenerator, CorporateJargonGenerator>();
         }
 
