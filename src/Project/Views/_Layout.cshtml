@@ -7,8 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="/assets/css/stylesheet.min.css" />
     <title>@(ViewBag.Title ?? "Bravo is Best")</title>
 </head>
 <body class="d-flex flex-column h-100">
@@ -25,8 +24,8 @@
         </div>
     </nav>
     @RenderBody()
-    <script src="/assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
+
+    @* Bundled scripts *@
+    <script src="/assets/js/site.min.js"></script> 
 </body>
 </html>
